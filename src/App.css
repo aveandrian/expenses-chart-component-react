@@ -108,6 +108,7 @@ h1 {
 
 footer {
   margin-top: 0.625rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 550px) {
