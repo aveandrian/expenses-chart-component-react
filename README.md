@@ -22,4 +22,4 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/aveandrian/expenses-chart-component-react/assets/13519212/efb4b49d-4cd2-4c66-8a5c-3ba401eaa8ef)
