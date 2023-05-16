@@ -1,0 +1,141 @@
+* {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body, #root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(27, 66%, 92%);
+}
+
+p {
+  font-size: 1.125rem;
+  color: hsl(28, 10%, 53%);
+}
+
+h1 {
+  color: hsl(25, 47%, 15%);
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.header-text > * {
+  color: hsl(33, 100%, 98%);
+}
+
+.header-text > p {
+  margin-bottom: 0.313rem;
+}
+
+.main-section {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 0.625rem;
+  padding: 1.875rem;
+}
+
+.histogram {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.625rem;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.313rem;
+}
+
+.column {
+  width: 50px;
+  border-radius: 0.313rem;
+}
+
+.total {
+  padding: 0.313rem;
+  background-color: hsl(25, 47%, 15%);
+  color: white;
+  border-radius: 0.313rem;
+  visibility: hidden;
+}
+
+.element:hover, .element:hover > .total {
+  cursor: pointer;
+  visibility: visible;
+}
+
+.element:hover > .today {
+  background-color: black
+}
+
+.divider {
+  margin-block: 1.875rem;
+  height: 0.125rem;
+  background-color: hsl(27, 66%, 92%);
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+
+.month-total {
+  font-size: 2rem;
+}
+
+.difference {
+  text-align: end;
+}
+
+footer {
+  margin-top: 0.625rem;
+}
+
+@media only screen and (max-width: 550px) {
+  #root, main, .histogram {
+    width: 100%;
+  }
+
+  main {
+    padding: 0.625rem;
+  }
+
+  .histogram {
+    gap: 0.125rem;
+    margin-top: 3.125rem;
+  }
+
+  .element {
+    position: relative;
+  }
+
+  .column {
+    width: 1.875rem;
+  }
+ 
+  .total {
+    position: absolute;
+    top: -1.875rem;
+    font-size: 0.8rem;
+  }
+
+}
